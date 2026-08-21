@@ -1,1 +1,70 @@
 
+                                <if expression="op == 13">
+                                    <then>
+                                        <assign variable="result" expression="arctan(a)"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="op == 14">
+                                    <then>
+                                        <assign variable="result" expression="log10(a)"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="op == 15">
+                                    <then>
+                                        <assign variable="result" expression="log(a)"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="op == 16">
+                                    <then>
+                                        <assign variable="result" expression="exp(a)"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="op == 17">
+                                    <then>
+                                        <assign variable="result" expression="abs(a)"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="op == 18">
+                                    <then>
+                                        <assign variable="result" expression="int(a)"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="op == 19">
+                                    <then>
+                                        <assign variable="result" expression="sgn(a)"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="op == 20">
+                                    <then>
+                                        <assign variable="result" expression="1"/>
+                                        <for variable="i" start="1" end="int(a)" direction="inc" step="1">
+                                            <assign variable="result" expression="result * i"/>
+                                        </for>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                        <output expression="&quot;=====&gt; Resultado: &quot; &amp; result &amp; &quot;\r\n&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="op != 0">
+                            <then>
+                                <output expression="&quot;Opcao Invalida!&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
+
