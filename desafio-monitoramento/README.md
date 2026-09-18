@@ -1,12 +1,12 @@
-#Desafio de Monitoramento de Temperatura
-##1. Identificação
+# Desafio de Monitoramento de Temperatura
+## 1. Identificação
 
-Nome do aluno: Nicolas de Araújo Ribeiro
-Disciplina: Algoritmo e Pensamento Computacional
-Professora: Profa. Karla Sartin
-Título do projeto: Sistema de Monitoramento de Temperatura
+### Nome do aluno: Nicolas de Araújo Ribeiro
+### Disciplina: Algoritmo e Pensamento Computacional
+### Professora: Profa. Karla Sartin
+### Título do projeto: Sistema de Monitoramento de Temperatura
 
-#2. Objetivo
+# 2. Objetivo
 
 O objetivo deste projeto é desenvolver um programa em linguagem C capaz de realizar o monitoramento de temperaturas informadas pelo usuário.
 
@@ -18,14 +18,14 @@ O monitoramento é encerrado automaticamente quando são registradas três tempe
 
 O projeto também realiza o tratamento de entradas inválidas, evitando que valores que não sejam numéricos sejam considerados como leituras válidas.
 
-#3. Funcionamento do programa
-##3.1 Definição do limite de temperatura
+# 3. Funcionamento do programa
+## 3.1 Definição do limite de temperatura
 
 Inicialmente, o programa solicita ao usuário que informe o limite de temperatura que será utilizado durante o monitoramento.
 
 O valor pode ser inteiro ou decimal, incluindo valores negativos.
 
-###Exemplos:
+### Exemplos:
 
 30
 25.5
@@ -37,7 +37,7 @@ O programa verifica se a entrada realizada é numérica. Caso o usuário digite 
 
 A definição do limite utiliza uma estrutura do...while, pois é necessário solicitar o valor pelo menos uma vez e repetir a solicitação enquanto a entrada for inválida.
 
-##3.2 Realização das leituras
+## 3.2 Realização das leituras
 
 Depois que o limite é definido, o programa inicia o monitoramento.
 
@@ -47,7 +47,7 @@ Cada leitura válida é contabilizada no total de leituras realizadas.
 
 O monitoramento é executado dentro de uma estrutura while.
 
-##3.3 Tratamento de valores inválidos
+## 3.3 Tratamento de valores inválidos
 
 O programa verifica o retorno da função scanf() para identificar se o usuário informou um valor numérico.
 
@@ -70,7 +70,7 @@ xyz
 
 não são considerados temperaturas válidas.
 
-##3.4 Identificação de temperaturas acima do limite
+## 3.4 Identificação de temperaturas acima do limite
 
 Depois que uma temperatura válida é registrada, ela é comparada com o limite definido pelo usuário.
 
@@ -98,7 +98,7 @@ ALERTA: temperatura acima do limite!
 
 Nesse caso, existem duas temperaturas consecutivas acima do limite.
 
-##3.5 Contagem de temperaturas consecutivas
+## 3.5 Contagem de temperaturas consecutivas
 
 O programa utiliza a variável:
 
@@ -129,7 +129,7 @@ Por exemplo, considerando um limite de 30:
 
 Mesmo que várias temperaturas tenham ficado acima do limite em momentos diferentes, o programa só encerra quando existirem três ocorrências consecutivas.
 
-##3.6 Condição de encerramento
+## 3.6 Condição de encerramento
 
 O monitoramento é encerrado automaticamente quando a variável consecutivas atinge o valor 3.
 
@@ -149,7 +149,7 @@ Quando ocorrer:
 
 o programa encerra automaticamente o monitoramento e apresenta um resumo final.
 
-#4. Estruturas de repetição utilizadas
+# 4. Estruturas de repetição utilizadas
 do...while
 
 A estrutura do...while é utilizada na definição do limite de temperatura.
@@ -191,7 +191,7 @@ while (getchar() != '\n');
 
 A utilização dessas estruturas permite que o programa trabalhe de maneira repetitiva e controlada, encerrando o monitoramento somente quando a condição estabelecida pelo desafio for atingida.
 
-#5. Como executar
+# 5. Como executar
 Pré-requisitos
 
 É necessário possuir um compilador de linguagem C instalado, como o GCC.
@@ -215,7 +215,7 @@ Caso esteja utilizando GCC/MinGW:
 
 monitoramento.exe
 
-#6. Testes realizados
+# 6. Testes realizados
 
 Foram realizados três cenários de teste para verificar o funcionamento do programa.
 
@@ -249,7 +249,7 @@ O comportamento esperado foi confirmado. As entradas inválidas não foram conta
 Evidência
 evidencias/teste01.png
 
-##Teste 2 — Temperaturas acima do limite, porém não consecutivas
+## Teste 2 — Temperaturas acima do limite, porém não consecutivas
 
 Objetivo: verificar se a contagem de temperaturas consecutivas é reiniciada quando uma temperatura fica dentro do limite.
 
@@ -280,7 +280,7 @@ O programa identificou corretamente as temperaturas acima do limite e reiniciou 
 Evidência
 evidencias/teste02.png
 
-##Teste 3 — Três temperaturas consecutivas acima do limite
+## Teste 3 — Três temperaturas consecutivas acima do limite
 
 Objetivo: verificar o encerramento automático do monitoramento.
 
@@ -309,7 +309,7 @@ O programa identificou corretamente três temperaturas consecutivas acima do lim
 Evidência
 evidencias/teste03.png
 
-##7. Estrutura do repositório
+## 7. Estrutura do repositório
 
 O projeto está organizado da seguinte maneira:
 
@@ -330,7 +330,7 @@ O arquivo README.md contém a documentação técnica, explicando o objetivo, fu
 
 A pasta evidencias contém as capturas de tela utilizadas para comprovar os testes realizados.
 
-#8. Conclusão
+# 8. Conclusão
 
 O projeto implementa um sistema simples de monitoramento de temperatura utilizando a linguagem C e as estruturas de repetição while e do...while.
 
@@ -338,7 +338,7 @@ O programa permite definir um limite de temperatura, realizar leituras sucessiva
 
 O monitoramento é encerrado automaticamente após três temperaturas consecutivas acima do limite, conforme a condição estabelecida para o desafio.
 
-#9. Justificativa sobre a escolha das estruturas de repetição
+# 9. Justificativa sobre a escolha das estruturas de repetição
 
 Foi escolhida uma combinação das estruturas do...while e while porque cada uma delas atende melhor a uma parte diferente do algoritmo.
 
