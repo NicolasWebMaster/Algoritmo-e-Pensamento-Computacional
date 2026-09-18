@@ -365,6 +365,3 @@ No do...while, a execução da solicitação ocorre primeiro e a condição é t
 No while, a condição é testada antes de uma nova leitura. Isso permite que o programa pare de solicitar temperaturas assim que a quantidade de três ocorrências consecutivas for atingida.
 
 Dessa forma, a combinação das duas estruturas torna o algoritmo adequado ao problema: o do...while garante a realização inicial da entrada que precisa ser validada, enquanto o while controla a continuidade do monitoramento de acordo com a condição de encerramento.
-
-
-Esse conteúdo já está estruturado com **títulos, subtítulos, listas, blocos de código e exemplos**, então pode ser salvo diretamente como `README.md`.
