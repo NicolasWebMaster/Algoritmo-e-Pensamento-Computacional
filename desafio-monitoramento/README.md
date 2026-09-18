@@ -247,7 +247,8 @@ Resultado obtido
 O comportamento esperado foi confirmado. As entradas inválidas não foram contabilizadas como leituras válidas e o programa continuou funcionando normalmente.
 
 Evidência
-evidencias/teste01.png
+
+![Evidência do Teste 1](evidencias/teste01.png.jpeg)
 
 ## Teste 2 — Temperaturas acima do limite, porém não consecutivas
 
@@ -277,8 +278,9 @@ Resultado obtido
 
 O programa identificou corretamente as temperaturas acima do limite e reiniciou a contagem sempre que uma temperatura dentro do limite foi registrada.
 
-Evidência
-evidencias/teste02.png
+#### Evidência
+
+![Evidência do Teste 2](evidencias/teste02.png.jpeg)
 
 ## Teste 3 — Três temperaturas consecutivas acima do limite
 
@@ -306,8 +308,9 @@ Resultado obtido
 
 O programa identificou corretamente três temperaturas consecutivas acima do limite, exibiu a mensagem de alerta e encerrou o monitoramento automaticamente.
 
-Evidência
-evidencias/teste03.png
+#### Evidência
+
+![Evidência do Teste 3](evidencias/teste03.png.jpeg)
 
 ## 7. Estrutura do repositório
 
@@ -319,9 +322,9 @@ desafio-monitoramento/
 ├── README.md
 │
 └── evidencias/
-    ├── teste01.png
-    ├── teste02.png
-    └── teste03.png
+    ├── teste01.png.jpeg
+    ├── teste02.png.jpeg
+    └── teste03.png.jpeg
 
 
 O arquivo monitoramento.c contém o código-fonte do programa.
